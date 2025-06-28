@@ -1,4 +1,4 @@
-package week1.Array_05.Stack_06;
+package week1.Stack_06;
 
 import java.util.ArrayDeque;
 
