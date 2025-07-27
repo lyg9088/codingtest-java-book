@@ -6,16 +6,24 @@ import java.util.PriorityQueue;
 
 public class P37_Dijkstra_Solution {
     public static void main(String[] args) {
-
+        int[][] graph = {{0,1,1},{1,2,5},{2,3,1}};
+        int start = 0;
+        int n =4;
+        System.out.println(Arrays.toString(solution(graph, start, n)));
     }
 
     // 노드의 정보 (노드 번호와 거리)를 쌍으로 저장할 클래스 생성
     private static class Node {
         int dest, cost;
 
-        public Node(int dest, int cast) {
+        public Node(int dest, int cost) {
             this.dest = dest;
             this.cost = cost;
+        }
+
+        @Override
+        public String toString() {
+            return "(" + this.dest + ", " +this.cost + ")";
         }
     }
 
@@ -52,7 +60,8 @@ public class P37_Dijkstra_Solution {
             }
 
             // 8. 현재 노드와 인접한 노드들의 거리 값을 계산하여 업데이트
-            for (Node next: adjList[now.cost]) {
+            for (Node next: adjList[now.dest]) {
+                System.out.println("next:"+next.toString());
                 // 9. 기존에 발견했던 거리보다 더 짧은 거리를 발견하면 거리 값을 갱신하고 큐에 넣음
                 if (dist[next.dest] > now.cost + next.cost) {
                     dist[next.dest] = now.cost + next.cost;
