@@ -3,7 +3,7 @@ package week5;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class P35_DFS_Solution {
+public class P34_DFS_Solution {
     public static void main(String[] args) {
         // 개념은 책으로 익혔음. 여기는 책에 문제풀이 연습한거..(ㅋㅋㅋ주로 뒤로 갈수록 저자님 풀이 타이핑이 주이지만..^^ 하나씩 익혀가는거지머..)
         // 깊이 우선 탐색(Depth First Search), 너비 우선 탐색(Breadth First Search), 다익스트라(Dijkstra) 알고리즘, 벨만 포드 알고리즘 드뎌 영접!ㅋㅋㅋㅋㅋㅋ

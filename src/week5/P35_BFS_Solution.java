@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class P36_BFS_Solution {
+public class P35_BFS_Solution {
     public static void main(String[] args) {
 
         int[][] graph = {{1,3},{3,4},{3,5},{5,2}};
